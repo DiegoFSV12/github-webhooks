@@ -1,2 +1,2 @@
-export * from './start.interface';
+export * from './star.interface';
 export * from './issue.interface';
