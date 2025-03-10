@@ -21,7 +21,7 @@ export class GithubController{
                 message = this.githubService.onIssue(payload);
                 break;
             default:
-                message = `Unknown evente => ${githubEvent}`;
+                message = `Unknown event => ${githubEvent}`;
         }
         console.log(message);
         this.discordService.notify(message)
