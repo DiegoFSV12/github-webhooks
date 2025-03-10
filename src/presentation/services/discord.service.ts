@@ -5,12 +5,12 @@ export class DiscordService{
 
     constructor(){}
 
-    async notify(message:string){
+    async notify(message:string,imageUrl?:string){
         const body = {
             content:message,
             embeds:[
                 {
-                    image:{url:'https://www.gifcen.com/wp-content/uploads/2021/11/hu-tao-16.gif'}
+                    image:{url:imageUrl}
                 }
             ]
         }
